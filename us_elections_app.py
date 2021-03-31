@@ -16,15 +16,19 @@ def home_page():
     st.title("TAMIDS Data Science Competition")
     
     # Desription -
-    st.write("""
-             The 2021 TAMIDS Data Science Competition concerns the role of money in US Presidential Elections. The key
+    st.markdown("""
+                <p style='text-align: justify;'>
+                
+                The 2021 TAMIDS Data Science Competition concerns the role of money in US Presidential Elections. The key
              idea of democracy is that every citizen should have input, via a vote, as to who is elected. Enormous amounts of
              money are expended by political campaigns to engage with voters, and so fundraising has become a major
              activity by candidates and other actors. Donations are an additional way for constituents to get involved in political
              races. Unions and corporations are able to donate through Political Action Committees (PACs), while the
              2010 Citizens United ruling by the US Supreme Court has removed caps on corporate donations via PACs and
              allowed campaign ads to be published or broadcast anonymously.  
-             """)
+                
+                </p>
+                """, unsafe_allow_html=True)
     
     # Problem Statement - 
     st.write("""
@@ -61,48 +65,58 @@ def get_graph_inference(party):
     
     # Understanding Democratics Graph - 
     if party == "Democrats":
-        
         st.write("""
                  ### **Plot Overview: Democrats **
-                 
-                 **First General OVerview!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                 Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
-                 
-                 * **2012:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                 Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                 Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                 Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                 * **2016:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                 Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                 Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                 Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                 * **2020:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                 Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                 Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                 Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
                  """)
-    
+        st.markdown("""
+                    <p style='text-align: justify;'>
+                 
+                 An outlier corresponding to the state DC was removed because of the unexpectedly high 
+                 investment from both parties even though it’s a predominantly Democratic state for ages.
+                 For different parties and categories of expenditure, graphs are displayed.  
+
+                 * **2012:**  Interestingly the democrats invested a lesser amount in the states where 
+                 Republicans are in a huge majority. At the same time, democrats spent a huge amount 
+                 of money to get the clear majority, in states like Illinois, California, Nevada. 
+
+                 * **2016:** All the states where Republicans have a huge margin in their victory 
+                 witnessed a huge drop in expenditure from the Democrats. Since Democrats were in 
+                 power for the last two sessions, they decided on cutting down the expenses.
+
+                 * **2020:** After some political events, democrats were confident in some states 
+                 and knew about the states they couldn’t win, thereby decreasing their investment 
+                 in those states. In some states, democrats kept investing money even though they 
+                 are far away from winning, planning for long-term success.
+                   
+                </p>""", unsafe_allow_html=True)
     # Understanding Republicans Graph - 
     elif party == "Republicans":
         st.write("""
-                     ### **Plot Overview: Republicans**
-                     
-                     **First General OVerview!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
-                     
-                     * **2012:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     * **2016:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     * **2020:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     """)
+                 ### **Plot Overview: Republicans**
+                 """)
+        st.markdown("""
+                    <p style='text-align: justify;'>
+                 
+                 An outlier corresponding to the state DC was removed because of the unexpectedly high 
+                 investment from both parties even though it’s a predominantly Democratic state for ages.
+                 For different parties and categories of expenditure, graphs are displayed.  
+                 
+                     * **2012:**  An interesting correlation was found between states with low 
+                     expenditure and election results. All the states where Republicans have spent 
+                     around less than $ 3,000,000 are red states crushing the other parties. 
+
+                     * **2016:**  The previous states where Republicans didn’t feel the need to spend 
+                     money and still get a victory witnessed a decrease in expenditure along with the 
+                     other red states. Since Democrats were in power for the last two sessions, 
+                     republicans strategically cut down their expenses. 
+
+                     * **2020:**  This year’s data is rather interesting because only the aforementioned 
+                     states (in 2012) had less expenditure. Perhaps, even in some red states, Republicans
+                     have invested a large amount of money because of the increase in Democratic votes. 
+                     There are a few states where democrats and republicans were on an investing spree 
+                     to secure at least the votes they had in 2016.
+                   
+                </p>""", unsafe_allow_html=True)
 
 # Get Vote diff graphs - 
 def get_vote_diff_graphs(party):
@@ -123,7 +137,7 @@ def get_vote_diff_graphs(party):
 
 def get_overall_graphs(party):
     # Getting the Graph - 
-    HtmlFile = open("Expenditure_Demographics_Analysis/Graphs/Some_Graph.html", 'r', encoding='utf-8')
+    HtmlFile = open(f"Expenditure_Demographics_Analysis/Graphs/{party}_State_Analysis.html", 'r', encoding='utf-8')
     source_code_2 = HtmlFile.read()
     components.html(source_code_2, height=1200)
     
@@ -159,16 +173,18 @@ def get_overall_inference(party):
                 Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
                 Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
                 """)
+
 def expenditure_analysis():
     # Setting the title - 
     st.title("Expenditure and Demographics Analysis!")
     
     # Desription -
-    st.write("""
-             The key idea of democracy is that every citizen should have input, via a vote, as to who is elected. Enormous amounts of
+    st.markdown("""
+                <p style='text-align: justify;'>
+                   The key idea of democracy is that every citizen should have input, via a vote, as to who is elected. Enormous amounts of
              money are expended by political campaigns to engage with voters, and so fundraising has become a major
              activity by candidates and other actors. The money is spent for various purposes.
-             """)
+                </p>""", unsafe_allow_html=True)
     
     st.write("")
     
@@ -178,22 +194,28 @@ def expenditure_analysis():
     col2.image(image)
     
     # Showing inital analysis -
-    st.write("""
-               **EXPLAIN ABOVE GRAPH. INSIGHTS!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-               Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-               Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-               """)
+    st.markdown("""
+                <p style='text-align: justify;'>
+                   The above graph demonstrates the trend in amount expenditure of each party for the last 
+               10 years. From the graph, the first obvious conclusion is: The campaigning expenditure 
+               for each party increased five-fold for the last presidential year. This increased the 
+               total voting numbers. Another subtle inference is the change and the difference in the 
+               expenditure of Republicans and Democrats from the last presidential election to the 2020 
+               presidential election.
+                </p>""", unsafe_allow_html=True)
     
     st.write(" ")
     # State-wise graphs -
-    st.write("""
-             **TRANSITION INTO NEXT GRAPHS. BRIEF INTRODUCTION.** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-               Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-               Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-             """)
+    st.markdown("""
+                <p style='text-align: justify;'>
+                   After analyzing the bigger picture, the next thing needed is “micro-analysis”. From looking 
+             at a national scope, we switch to states and start looking at different expenses. The 
+             dataset which comprised various purposes of expenditure was categorized using NLP with 
+             categories: Advertisement, Communications, Logistics, and others.
+                </p>""", unsafe_allow_html=True)
     st.write(" ")
+    
+    
     col1, col2 = st.beta_columns((1,1))
     # Getting party from the user -
     party_selected = col1.selectbox("Select Party", ['Democrats', 'Republicans'])
@@ -244,13 +266,14 @@ def expenditure_analysis():
     
     # Entering the final plot of Tushar -
     st.write("""
-             ## Some Title
+             ## People, Money, and Voting!
              
              **Explain how to read the graph, how it can help.** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
                Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
                Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
                Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-             """)
+             
+                """)
     
     # Choosing party to analyze vote difference.
     col1, col2, col3 = st.beta_columns((1,1.5,1))
