@@ -549,7 +549,6 @@ def authors():
     # Setting the image width -
     col1.write("")
     col1.write("")
-    col1.write("")
     col1.image(image, use_column_width=True)
     
     # Ritesh Singh Suhag -
@@ -557,15 +556,13 @@ def authors():
     
     # About section - 
     col3.write("""
-               Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-               Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.   
+               Research Area: Error Estimation and Machine Learning.
                
                * **University:** Texas A&M University (Department of Electrical and Computer Engineering)
                * **Degree:** PhD Student (Computer Engineering) 
                * **Email:** sambandh@tamu.edu
                * **LinkedIn:** [linkedin.com/in/sambandh-dhal9163/](https://www.linkedin.com/in/sambandh-dhal9163/)
-               * **Github:** [github.com/ritesh-suhag](https://www.github.com/ritesh-suhag)
+               * **Github:** [github.com/Sambandh](https://github.com/Sambandh)
                """)
     st.write("")
     
@@ -578,7 +575,6 @@ def authors():
     # Setting the image width -
     col1.write("")
     col1.write("")
-    col1.write("")
     col1.image(image, use_column_width=True)
     
     # Ritesh Singh Suhag -
@@ -586,15 +582,13 @@ def authors():
     
     # About section - 
     col3.write("""
-               Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-               Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.     
+               Research Area: Modular Robotics and Virtual Reality.
                
                * **University:** Texas A&M University (Department of Electrical and Computer Engineering)
                * **Degree:** PhD Student (Computer Engineering) 
                * **Email:** swarnabha7@tamu.edu
                * **LinkedIn:** [linkedin.com/in/swarnabha-roy-53a588a4/](https://www.linkedin.com/in/swarnabha-roy-53a588a4/)
-               * **Github:** [github.com/ritesh-suhag](https://www.github.com/ritesh-suhag)
+               * **Github:** [github.com/swarnabha13](https://github.com/swarnabha13)
                """)
     st.write("")
 
