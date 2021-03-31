@@ -374,15 +374,27 @@ def expenditure_analysis():
 
 # ~~~~~~~~~~ Industry Donations Analysis Page -
 
+def get_state_wise_graph(party):
+    # Getting the Graph - 
+    HtmlFile = open(f"Company_Donations_Analysis/Graphs/{party}_company_donation_statewise.html", 'r', encoding='utf-8')
+    source_code_2 = HtmlFile.read()
+    components.html(source_code_2, height=450)
+    
 def get_year_wise_graph():
     # Getting the Graph - 
-    HtmlFile = open("Graphs/swarnabha_yearwise_company_expenditure.html", 'r', encoding='utf-8')
+    HtmlFile = open("Company_Donations_Analysis/Graphs/yearwise_company_donations.html", 'r', encoding='utf-8')
     source_code_2 = HtmlFile.read()
     components.html(source_code_2, height=450)
 
-def get_state_wise_graph():
+def get_financial_organization_graph():
     # Getting the Graph - 
-    HtmlFile = open("Graphs/swarnabha_state_company.html", 'r', encoding='utf-8')
+    HtmlFile = open("Company_Donations_Analysis/Graphs/financial_organisations_donation.html", 'r', encoding='utf-8')
+    source_code_2 = HtmlFile.read()
+    components.html(source_code_2, height=450)
+
+def get_educational_graph():
+    # Getting the Graph - 
+    HtmlFile = open("Company_Donations_Analysis/Graphs/educational_organisations_donation.html", 'r', encoding='utf-8')
     source_code_2 = HtmlFile.read()
     components.html(source_code_2, height=450)
     
@@ -398,8 +410,9 @@ def industry_donations_analysis():
                Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.   
                
              """)
+    
     st.write("""
-             ### Some title 
+             ## Party-wise Donations 
              
              **Some intro into the grpahs. Why we are analyzing it that way.** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
                Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
@@ -407,7 +420,39 @@ def industry_donations_analysis():
                Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.   
                
              """)
+    st.write(" ")
+    
+    col1, col2, col3 = st.beta_columns((1,1.5,1))
+    party_selected_don = col2.selectbox("Select Party - ", ["Democratics", "Republicans"])
+    
+    # Getting the state wise graph - 
+    get_state_wise_graph(party_selected_don)
+    
+    # Getting inference -
+    st.write("")
+    st.write("""
+             ### **Plot Overview: **
+            
+            **Some intersting insight!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
+            Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
+            
+            Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
+            Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
+            Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
+            Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+            """)
+    
+    # Year-wise Donations - 
+    st.write("""
+             ## Year-wise Donations 
              
+             **Some background thinking. Reason for thinking in this direction!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
+               Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
+               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
+               Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.   
+              
+             """)
+    
     # Getting the year wise graph - 
     get_year_wise_graph()
     
@@ -433,24 +478,49 @@ def industry_donations_analysis():
                      
              """)
     
-    # State wise analysis -
-    # Desription -
+    # Financial Organization -
     st.write("""
+             ## Financial Organizations Donations 
+             
              **Some background thinking. Reason for thinking in this direction!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
                Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
                Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
                Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.   
-               
+              
              """)
     
-    # Getting the state wise graph - 
-    get_state_wise_graph()
+    # Get financial graph
+    get_financial_organization_graph()
     
     # Getting inference -
     st.write("")
     st.write("""
-             ### **Plot Overview: **
+            **Some intersting insight!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
+            Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
             
+            Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
+            Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
+            Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
+            Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+            """)
+            
+    # Educational Organization -
+    st.write("""
+             ## Educational Institution Donations 
+             
+             **Some background thinking. Reason for thinking in this direction!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
+               Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
+               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
+               Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.   
+             
+             """)
+    
+    # Get financial graph
+    get_educational_graph()
+    
+    # Getting inference -
+    st.write("")
+    st.write("""
             **Some intersting insight!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
             Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
             
@@ -637,7 +707,7 @@ st.image(image, use_column_width=True)
 
 # Sidebar navigation for users -
 st.sidebar.header('Navigation tab -')
-navigation_tab = st.sidebar.selectbox('Choose a tab', ('Home-Page', 'Expenditure Analysis', 'Industry Donations Analysis', 'Network Analysis', 'About the Authors'))
+navigation_tab = st.sidebar.selectbox('Choose a tab', ('Home-Page', 'Industry Donations Analysis', 'Expenditure Analysis', 'Network Analysis', 'About the Authors'))
 
 # Displaying pages according to the selection -
 
