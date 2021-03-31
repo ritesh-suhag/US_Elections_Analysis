@@ -624,15 +624,13 @@ def authors():
     
     # About section - 
     col3.write("""
-               Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-               Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.     
+               Research Area: Quantum Topology and Compressed Sensing     
                
                * **University:** Texas A&M University (Department of Mathematics)
-               * **Degree:** PhD Student (Maths n shitz) 
+               * **Degree:** PhD Student (2024) 
                * **Email:** tusharp@tamu.edu
                * **LinkedIn:** [linkedin.com/in/tushar-pandey1612/](https://www.linkedin.com/in/tushar-pandey1612/)
-               * **Github:** [github.com/ritesh-suhag](https://www.github.com/ritesh-suhag)
+               * **Github:** [github.com/pandey-tushar](https://github.com/pandey-tushar)
                """)
     st.write("")
     
