@@ -57,216 +57,35 @@ def get_party_exp_graph(party, category):
     source_code_2 = HtmlFile.read()
     components.html(source_code_2, height=500)
 
-def get_graph_inference(party, category):
+def get_graph_inference(party):
     
     # Understanding Democratics Graph - 
-    if party == "Democratics":
+    if party == "Democrats":
         
-        # All expenses Graph -
-        if category == "All Expenses":
-            st.write("""
-                     ### **Plot Overview: Democratics - All Expenses**
-                     
-                     **First General OVerview!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
-                     
-                     * **2012:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     * **2016:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     * **2020:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     """)
-        
-        # Communiations Expenses Graph -
-        elif category == "Communiations Expenses":
-            st.write("""
-                     ### **Plot Overview: Democratics - Communiations Expenses**
-                     
-                     **First General OVerview!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
-                     
-                     * **2012:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     * **2016:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     * **2020:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     """)
-        
-        # Advertisement Expenses Graph -
-        elif category == "Advertisement Expenses":
-            st.write("""
-                     ### **Plot Overview: Democratics - Advertisement Expenses**
-                     
-                     **First General OVerview!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
-                     
-                     * **2012:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     * **2016:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     * **2020:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     """)
-        
-        # Logistics Expenses Graph -
-        elif category == "Logistics Expenses":
-            st.write("""
-                     ### **Plot Overview: Democratics - Logistics Expenses**
-                     
-                     **First General OVerview!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
-                     
-                     * **2012:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     * **2016:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     * **2020:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     """)
-        
-        # Others Graph -
-        elif category == "Others":
-            st.write("""
-                     ### **Plot Overview: Democratics - Others**
-                     
-                     **First General OVerview!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
-                     
-                     * **2012:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     * **2016:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     * **2020:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     """)
+        st.write("""
+                 ### **Plot Overview: Democrats **
+                 
+                 **First General OVerview!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
+                 Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
+                 
+                 * **2012:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
+                 Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
+                 Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
+                 Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+                 * **2016:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
+                 Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
+                 Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
+                 Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+                 * **2020:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
+                 Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
+                 Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
+                 Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+                 """)
     
     # Understanding Republicans Graph - 
     elif party == "Republicans":
-        
-        # All expenses Graph -
-        if category == "All Expenses":
-            st.write("""
-                     ### **Plot Overview: Republicans - All Expenses**
-                     
-                     **First General OVerview!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
-                     
-                     * **2012:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     * **2016:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     * **2020:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     """)
-        
-        # Communiations Expenses Graph -
-        elif category == "Communiations Expenses":
-            st.write("""
-                     ### **Plot Overview: Republicans - Communiations Expenses**
-                     
-                     **First General OVerview!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
-                     
-                     * **2012:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     * **2016:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     * **2020:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     """)
-        
-        # Advertisement Expenses Graph -
-        elif category == "Advertisement Expenses":
-            st.write("""
-                     ### **Plot Overview: Republicans - Advertisement Expenses**
-                     
-                     **First General OVerview!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
-                     
-                     * **2012:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     * **2016:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     * **2020:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     """)
-        
-        # Logistics Expenses Graph -
-        elif category == "Logistics Expenses":
-            st.write("""
-                     ### **Plot Overview: Republicans - Logistics Expenses**
-                     
-                     **First General OVerview!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
-                     
-                     * **2012:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     * **2016:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     * **2020:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                     Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                     Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                     Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                     """)
-        
-        # Others Graph -
-        elif category == "Others":
-            st.write("""
-                     ### **Plot Overview: Republicans - Others**
+        st.write("""
+                     ### **Plot Overview: Republicans**
                      
                      **First General OVerview!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
                      Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
@@ -285,12 +104,61 @@ def get_graph_inference(party, category):
                      Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
                      """)
 
-def get_other_graph():
+# Get Vote diff graphs - 
+def get_vote_diff_graphs(party):
+    col1, col2, col3 = st.beta_columns((1,0.1,1))
+    # Positive difference plot - 
+    with col1:
+        # Getting the Graph - 
+        HtmlFile = open(f"Expenditure_Demographics_Analysis/Graphs/Positive_Vote_{party}.html", 'r', encoding='utf-8')
+        source_code_2 = HtmlFile.read()
+        components.html(source_code_2, height=500)
+    
+    # Negative difference plot - 
+    with col3:
+        # Getting the Graph - 
+        HtmlFile = open(f"Expenditure_Demographics_Analysis/Graphs/Negative_Vote_{party}.html", 'r', encoding='utf-8')
+        source_code_2 = HtmlFile.read()
+        components.html(source_code_2, height=500)
+
+def get_overall_graphs(party):
     # Getting the Graph - 
     HtmlFile = open("Expenditure_Demographics_Analysis/Graphs/Some_Graph.html", 'r', encoding='utf-8')
     source_code_2 = HtmlFile.read()
     components.html(source_code_2, height=1200)
     
+def get_overall_inference(party):
+    # Democrats inference - 
+    if party == "Democrats":
+        # Getting inference -
+        st.write("")
+        st.write("""
+                 ### **Democrats - Plot Overview: **
+                
+                **Some intersting insight!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
+                Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
+                
+                Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
+                Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
+                Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
+                Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+                """)
+    
+    # Republicans inference - 
+    elif party == "Republicans":
+        # Getting inference -
+        st.write("")
+        st.write("""
+                 ### **Republicans - Plot Overview: **
+                
+                **Some intersting insight!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
+                Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
+                
+                Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
+                Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
+                Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
+                Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+                """)
 def expenditure_analysis():
     # Setting the title - 
     st.title("Expenditure and Demographics Analysis!")
@@ -328,7 +196,7 @@ def expenditure_analysis():
     st.write(" ")
     col1, col2 = st.beta_columns((1,1))
     # Getting party from the user -
-    party_selected = col1.selectbox("Select Party", ['Democratics', 'Republicans'])
+    party_selected = col1.selectbox("Select Party", ['Democrats', 'Republicans'])
     
     # Getting expenditure from the user - 
     expenditure_category_selected = col2.selectbox("Select Expenditure", 
@@ -339,15 +207,44 @@ def expenditure_analysis():
     get_party_exp_graph(party_selected, expenditure_category_selected)
     
     # Geting the sponding explanation - 
-    get_graph_inference(party_selected, expenditure_category_selected)
+    get_graph_inference(party_selected)
     
+    st.write("---")
     # DIFFERENCE PLOT -
-    st.info("Need to insert diff plots")
+    
+    st.write("""
+             ## Investment to Vote Difference Ratio
+             """)
+    st.write("""
+             **Explanation.** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
+               Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
+               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
+               Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+             """)
+    st.write(" ")
+    
+    # Choosing party to analyze vote difference.
+    col1, col2, col3 = st.beta_columns((1,1.5,1))
+    party_selected_2 = col2.selectbox("Choose a party to analyze vote difference over years - ", 
+                                     ['Democrats', 'Republicans'])
+    st.write(" ")
+    
+    # Getting vote difference graphs - 
+    get_vote_diff_graphs(party_selected_2)
+    
+    # Getting inference, result, analysis - 
+    st.write("""
+             **Explanation.** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
+               Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
+               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
+               Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+             """)
+    
     st.write("---")
     
     # Entering the final plot of Tushar -
     st.write("""
-             ### Some Title
+             ## Some Title
              
              **Explain how to read the graph, how it can help.** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
                Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
@@ -355,22 +252,17 @@ def expenditure_analysis():
                Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
              """)
     
-    # Getting the graph - 
-    get_other_graph()
+    # Choosing party to analyze vote difference.
+    col1, col2, col3 = st.beta_columns((1,1.5,1))
+    party_selected_3 = col2.selectbox("Choose a party to analyze overall graphs - ", 
+                                     ['Democrats', 'Republicans'])
+    st.write(" ")
     
-    # Getting inference -
-    st.write("")
-    st.write("""
-             ### **Plot Overview: **
-            
-            **Some intersting insight!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-            Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
-            
-            Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-            Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-            Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-            Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-            """)
+    # Getting vote difference graphs - 
+    get_overall_graphs(party_selected_3)
+    
+    # Get overall inference - 
+    get_overall_inference(party_selected_3)
 
 # ~~~~~~~~~~ Industry Donations Analysis Page -
 
