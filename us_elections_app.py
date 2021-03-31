@@ -296,22 +296,23 @@ def industry_donations_analysis():
     
     # Desription -
     st.write("""
-             **Some background thinking. Initial thought process of going into this analysis.** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-               Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-               Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.   
+             An analysis of the corporate funding spanning across all the states in the United States of America has been analyzed for the last six presidential elections. A pattern emerging from how the corporate donations from the different sectors of the industry have been studied and inferences have been made accordingly.   
                
              """)
     
     st.write("""
              ## Party-wise Donations 
              
-             **Some intro into the grpahs. Why we are analyzing it that way.** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-               Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-               Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.   
-               
-             """)
+             For each of the states, the donations made to both the political parties: Republicans and Democrats have 
+             been analyzed and the impact of these corporate funding have been analyzed on how they determine the final
+              outcome. For this purpose, all these companies have been divided into different sectors depending on their
+               area of operation and the donation patterns for each of these companies have been analyzed over the past 
+               presidential elections and the factors promoting such behavior have been scrutinized for future analysis.
+             
+             
+             For a detailed analysis of these party wise donations, an interactive plot has been shown for both the 
+            parties with the help of bubble plots."""
+             )
     st.write(" ")
     
     col1, col2, col3 = st.beta_columns((1,1.5,1))
@@ -325,23 +326,28 @@ def industry_donations_analysis():
     st.write("""
              ### **Plot Overview: **
             
-            **Some intersting insight!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-            Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
-            
-            Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-            Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-            Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-            Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-            """)
+            **Some intersting insight!** As we can see, in the bubble plot above, the Transportation companies (FedEx, 
+            UPS etc.) have stayed loyal to the Republican party which can be estimated by the massive amount of 
+            donations that have been made to the party irrespective of the outcome of the elections. Similarly, 80% of 
+            the Tech companies and the Labor Unions have remained loyal to the Democratic Party in the subsequent 
+            elections. The Finance and Real Estate companies, baring a few, are the only sector of companies which have 
+            shifted their allegiance in each Presidential campaign and have been successful in gauging the winning party
+             in most of the cases. Another important observation that can be made in this case is that the major donors 
+             of the Republican party in all of these Presidential campaigns have their headquarters located in smaller 
+             states, mostly in Michigan and Wisconsin, where as most of the major donors of the Democratic party have 
+             their headquarters centered in New York and California.""")
     
     # Year-wise Donations - 
     st.write("""
              ## Year-wise Donations 
              
-             **Some background thinking. Reason for thinking in this direction!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-               Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-               Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.   
+             **Some background thinking. Reason for thinking in this direction!** We further explore the Donation data 
+             over the years to get some insights. We analyzed the Corporate Donation data for the last three 
+             Presidential elections. All the money that has been donated by the companies during the non-election years 
+             have been taken into account for the next Presidential year. For example, if we have the company wise 
+             donation data for 2014 and 2016, we added the donation received by the Political parties in 2014 to the
+             donation data received in 2016 so that we have a cumulative donation received by the Political parties 
+             during the Political campaign years. 
               
              """)
     
@@ -352,21 +358,27 @@ def industry_donations_analysis():
     st.write("""
              ### Inference/Result/Analysis 
              
-             **Interesting insights into the grphs** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-             Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
+             **Interesting insights into the grphs** The above visualization shows a relation between the money donated 
+              to the Republications vs. the money donated to the Democrats over the years by the Corporate Industries.  
+              The size of the circle gives a relative understanding of the amount of money donated to the Political 
+              parties. The x-axis gives the estimate of the money donated to the Democrats while the y-axis gives the 
+              estimate of the money donated to the Republicans. Thus, more the circle is leaning towards the x-axis, more
+              the money is invested onto Democrats and vice versa. The color of the circle denotes the category or the sector
+               of industry into which the company belongs to. Let's look into the year-wise analysis:
                      
-             * **2012:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-             Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-             Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-             Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-             * **2016:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-             Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-             Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-             Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-             * **2020:** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-             Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-             Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-             Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+             * **2012:** Most of the donations came from Miscellaneous Business, Financial and Real Estate institutions 
+             and Labor based industries. Las Vegas Sands is the biggest contributor from Miscellaneous Business and most
+             of the money has been donated to the Republicans. The majority of the companies belonging to the labor 
+             industry donated to the Democrats. The money donated by Financial institutions is scattered between both
+             Democrats and Republicans.
+             * **2016:** The major donors were still the Miscellaneous Business, Financial institutions, Labor and 
+             Healthcare institutions. Las Vegas Sands is still the biggest contributor from Miscellaneous Business and 
+             most of the money has been donated to the Republicans. Majority of Financial Institutions supported the 
+             Democrats this time. Labor industry continued their support for Democrats. 
+             * **2020:** The money donations have significantly increased as denoted by the size of the circles. The 
+             biggest contributors to the Democrats were the Financial institutions. Miscellaneous Business still 
+             supported the Republicans irrespective of the election year. Similarly, the money donated by the labor 
+             industries have increased but they stayed loyal to the Democrats and continued their support. 
                      
              """)
     
