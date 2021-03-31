@@ -96,21 +96,20 @@ def get_graph_inference(party):
                  """)
         st.markdown("""
                     <p style='text-align: justify;'>
-                 
                  An outlier corresponding to the state DC was removed because of the unexpectedly high 
                  investment from both parties even though it’s a predominantly Democratic state for ages.
                  For different parties and categories of expenditure, graphs are displayed.  
                  
-                     * **2012:**  An interesting correlation was found between states with low 
+                 * **2012:**  An interesting correlation was found between states with low 
                      expenditure and election results. All the states where Republicans have spent 
                      around less than $ 3,000,000 are red states crushing the other parties. 
 
-                     * **2016:**  The previous states where Republicans didn’t feel the need to spend 
+                * **2016:**  The previous states where Republicans didn’t feel the need to spend 
                      money and still get a victory witnessed a decrease in expenditure along with the 
                      other red states. Since Democrats were in power for the last two sessions, 
                      republicans strategically cut down their expenses. 
 
-                     * **2020:**  This year’s data is rather interesting because only the aforementioned 
+                * **2020:**  This year’s data is rather interesting because only the aforementioned 
                      states (in 2012) had less expenditure. Perhaps, even in some red states, Republicans
                      have invested a large amount of money because of the increase in Democratic votes. 
                      There are a few states where democrats and republicans were on an investing spree 
@@ -147,32 +146,28 @@ def get_overall_inference(party):
         # Getting inference -
         st.write("")
         st.write("""
-                 ### **Democrats - Plot Overview: **
-                
-                **Some intersting insight!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
-                
-                Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                """)
+                 ### **Democrats - Plot Overview: **""")
+        st.markdown("""
+             <p style='text-align: justify;'>
+             States with a higher population of people who are neither African American nor White tend to favor the democrats.
+             Another riveting find is that the expenditure is surging for the state's democrats already have a huge advantage in and 
+             in the meanwhile where it’s either equal or the republicans are winning, the expenditure has decreased for 2016 which is 
+             concurrent with the US politics trend. 
+                </p>""", unsafe_allow_html=True)
     
     # Republicans inference - 
     elif party == "Republicans":
         # Getting inference -
         st.write("")
         st.write("""
-                 ### **Republicans - Plot Overview: **
-                
-                **Some intersting insight!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
-                
-                Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-                Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-                Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-                Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-                """)
+                 ### **Republicans - Plot Overview: **""")
+        st.markdown("""
+             <p style='text-align: justify;'>
+              States with a higher population of people who are neither African American nor White tend not to favor the Republicans. 
+              In contrast to the conclusions drawn from the graph for democrats, the trend in change of expenditure throughout the 
+              election years is a little different. Some states saw an increase in the expenditure throughout the three presidential 
+              elections, while a general trend is an increase in investment in 2016 because it was a year marked with their victory.
+                </p>""", unsafe_allow_html=True)
 
 def expenditure_analysis():
     # Setting the title - 
@@ -235,14 +230,14 @@ def expenditure_analysis():
     # DIFFERENCE PLOT -
     
     st.write("""
-             ## Investment to Vote Difference Ratio
+             ## How much does investment help?
              """)
-    st.write("""
-             **Explanation.** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-               Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-               Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-             """)
+    st.markdown("""
+                <p style='text-align: justify;'>
+                From the previous graph, we can see that each party wanted to go all in this time and win the elections. 
+             But does investment always lead to an increase in the voting percentage? To answer this question we defined a 
+             Return of Investment index for different states based on how much does campaigning influences the results for both parties. 
+             </p>""", unsafe_allow_html=True)
     st.write(" ")
     
     # Choosing party to analyze vote difference.
@@ -256,24 +251,38 @@ def expenditure_analysis():
     
     # Getting inference, result, analysis - 
     st.write("""
-             **Explanation.** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-               Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-               Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+             ### **Inference**
              """)
+    st.markdown("""
+                <p style='text-align: justify;'>
+             The graphs are divided into two subgraphs where one corresponds to the states where the percentage of votes received by 
+             Republicans/Democrats increased and the other subgraph where we see the states when the percentage of votes received by 
+             Republicans/Democrats decreased between two presidential elections.  
+             
+             The first important question, whether investing always helps is answered through all the graphs. In various states, 
+             the Republicans lost votes despite an increase in expenditure of millions of dollars. The ROI for republicans is positive 
+             (significantly larger than 0) for the states (except Utah) where they lost, which means they reduced their expenditures there. 
+             In 2016 in Utah, they reduced their investment and therefore lost a lot of votes (more than 25%), however, the state remained 
+             red. But the next presidential election, they invested more and were able to get the votes in their favor. If we look at the 
+             Democrats data, only five states witnessed a surge in blue votes whereas in 2020 all the states had an increase in the number 
+             of votes for Democratic party. Most of the states with high ROI went Blue, except Utah in 2020. Because of a decrease 
+             in Republican votes in 2016, Democrats invested just a little in 2020 and were able to secure 10% more votes than in 2016, 
+             thereby giving a huge ROI for the same. This way, the graph helps us understand the trends and the power of campaigning on the 
+             minds of different people beautifully.
+             </p>""", unsafe_allow_html=True)
     
     st.write("---")
     
     # Entering the final plot of Tushar -
     st.write("""
-             ## People, Money, and Voting!
-             
-             **Explain how to read the graph, how it can help.** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-               Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-               Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-             
-                """)
+             ## People, Money, and Voting!""")
+    
+    st.markdown("""
+             <p style='text-align: justify;'>
+             A scatter plot with population data, expenditure data, the voting percentage for three presidential election years 
+             tells us about some correlation between the certain population in some states and how they affect the electoral votes 
+             in their respective states.
+             </p>""", unsafe_allow_html=True)
     
     # Choosing party to analyze vote difference.
     col1, col2, col3 = st.beta_columns((1,1.5,1))
@@ -474,8 +483,9 @@ def network_analysis():
     col1.image(image, use_column_width=True)
     
     # Writing description - 
-    col3.write("""
-               Topological Data Analysis is a clustering algorithm that relies on topology and 
+    col3.markdown("""
+                <p style='text-align: justify;'>
+                Topological Data Analysis is a clustering algorithm that relies on topology and 
                creates a Cech complex of a point-cloud. Using persistent diagrams, the number of 
                clusters is calculated. From there, using t-distributed stochastic neighbor embedding, 
                the data is projected in a manner such that some properties are preserved. After the 
@@ -483,12 +493,18 @@ def network_analysis():
                to obtain a 3-dimensional graph. The hyperparameters are autotuned based on the variance 
                and mean valency of the graph. Lastly, the graph is colored according to different 
                attributes associated with the original dataset to provide better visualization.
-               """)
+                
+                <p> 
+                """, unsafe_allow_html=True)
+    
     
     st.write("""
-             ## Inference/Result/Analysis 
+             ## Inference 
              
-             There are some great insights from this model, specifically on the clustering part. 
+             """)
+    st.markdown("""
+               <p style='text-align: justify;'> 
+               There are some great insights from this model, specifically on the clustering part. 
              There is one cluster with states where DEMOCRATS won and their expense is around the 
              same as republicans. Similarly, there is another one where REPUBLICANS won, which gives 
              us some information on the states where parties spend a similar amount of money and the 
@@ -496,20 +512,22 @@ def network_analysis():
              spend more than the Republicans, but still, they won, which says that the state is blue. 
              These insights were helpful in understanding the relationship between expenditure and 
              voting in different states. 
-             """)
+             <p> 
+             """, unsafe_allow_html=True)
+                
     st.write(" ")
     st.write("""
-             You can go to the network analysis by clicking the button. Below is a snapshot of the network analysis.
+             You can go to the network analysis by clicking on the link. Below is a snapshot of the network analysis.
              """)
     
     # To access the network analysis, press the button below - 
     st.write("")
     col1, col2, col3 = st.beta_columns((1,1,1))
-    # link = '[Network Analysis](https://ritesh-suhag.github.io./)'
-    # col2.markdown(link, unsafe_allow_html=True)
-    url = 'https://ritesh-suhag.github.io./'
-    if col2.button("Go to the Network Analysis"):
-        webbrowser.open_new_tab(url)
+    link = '[Go to Network Analysis](https://ritesh-suhag.github.io./)'
+    col2.markdown(link, unsafe_allow_html=True)
+    # url = 'https://ritesh-suhag.github.io./'
+    # if col2.button("Go to the Network Analysis"):
+    #     webbrowser.open_new_tab(url)
     
     st.write(" ")
     # Setting the image - 
