@@ -429,22 +429,38 @@ def network_analysis():
     # Setting the title - 
     st.title("Network Analysis")
     
-    # Desription -
+    # Dividing into 2 parts - 
+    col1, col2, col3 = st.beta_columns((1,0.1,1))
+    
+    # Setting the image - 
+    image = Image.open('Images/network_photo.png')
+    
+    # Setting the image width -
+    col1.image(image, use_column_width=True)
+    
+    # Writing description - 
+    col3.write("""
+               Topological Data Analysis is a clustering algorithm that relies on topology and 
+               creates a Cech complex of a point-cloud. Using persistent diagrams, the number of 
+               clusters is calculated. From there, using t-distributed stochastic neighbor embedding, 
+               the data is projected in a manner such that some properties are preserved. After the 
+               projection, a clustering algorithm along with covering balls is applied to the dataset 
+               to obtain a 3-dimensional graph. The hyperparameters are autotuned based on the variance 
+               and mean valency of the graph. Lastly, the graph is colored according to different 
+               attributes associated with the original dataset to provide better visualization.
+               """)
+    
     st.write("""
-             **Explain how to read the graph, how it can help.** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-               Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-               Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.   
-               
-             """)
-    st.write("""
-             ### Inference/Result/Analysis 
+             ## Inference/Result/Analysis 
              
-             **Some great inference or anything that helps!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-               Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-               Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.   
-               
+             There are some great insights from this model, specifically on the clustering part. 
+             There is one cluster with states where DEMOCRATS won and their expense is around the 
+             same as republicans. Similarly, there is another one where REPUBLICANS won, which gives 
+             us some information on the states where parties spend a similar amount of money and the 
+             people tend to vote for the same party. Another cluster has states where democrats did not 
+             spend more than the Republicans, but still, they won, which says that the state is blue. 
+             These insights were helpful in understanding the relationship between expenditure and 
+             voting in different states. 
              """)
     st.write(" ")
     st.write("""
@@ -507,8 +523,6 @@ def authors():
     
     # Setting the image width -
     col1.write("")
-    col1.write("")
-    col1.write("")
     col1.image(image, use_column_width=True)
     
     # Ritesh Singh Suhag -
@@ -568,7 +582,7 @@ def authors():
     col1.image(image, use_column_width=True)
     
     # Ritesh Singh Suhag -
-    col3.write("## Swaranbha Roy")
+    col3.write("## Swarnabha Roy")
     
     # About section - 
     col3.write("""
