@@ -407,8 +407,12 @@ def industry_donations_analysis():
              ### **Plot Overview: **
             """)
     st.markdown("""
+                <p style='text-align: justify;'>          
+            The headquarters for each of the corporations have been stated. For each of the Presidential campaigns from 2000 to 2020, the bubble plot clearly shows how the donations shift from one party to the other depending on the field of operation of each company. The headquarters have been appended on the left so as to give an idea of how the donation pattern of the companies depend on the state where it operates its major businesses in. 
+            </p>""", unsafe_allow_html=True)
+    st.markdown("""
                 <p style='text-align: justify;'>         
-            As we can see, in the bubble plot above, the Transportation companies (FedEx, 
+            In the bubble plot above, the Transportation companies (FedEx, 
             UPS etc.) have stayed loyal to the Republican party which can be estimated by the massive amount of 
             donations that have been made to the party irrespective of the outcome of the elections. Similarly, 80% of 
             the Tech companies and the Labor Unions have remained loyal to the Democratic Party in the subsequent 
