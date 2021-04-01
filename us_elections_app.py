@@ -358,7 +358,7 @@ def industry_donations_analysis():
     st.write("""
              ### Inference/Result/Analysis 
              
-             **Interesting insights into the grphs** The above visualization shows a relation between the money donated 
+             **Interesting insights into the graphs** The above visualization shows a relation between the money donated 
               to the Republications vs. the money donated to the Democrats over the years by the Corporate Industries.  
               The size of the circle gives a relative understanding of the amount of money donated to the Political 
               parties. The x-axis gives the estimate of the money donated to the Democrats while the y-axis gives the 
@@ -384,12 +384,13 @@ def industry_donations_analysis():
     
     # Financial Organization -
     st.write("""
-             ## Financial Organizations Donations 
+             ## Donations by Financial Organizations 
              
-             **Some background thinking. Reason for thinking in this direction!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-               Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-               Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.   
+             **Some background thinking. Reason for thinking in this direction!** The Financial institutions, Insurance 
+             companies and the Real Estate companies made significant donations to the Political parties and their 
+             contributions have swung a lot over the years. These institutions were not loyal in particular to any party
+             and they mostly invested in the Political parties that they thought would likely win during that
+              Presidential year. 
               
              """)
     
@@ -399,25 +400,21 @@ def industry_donations_analysis():
     # Getting inference -
     st.write("")
     st.write("""
-            **Some intersting insight!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-            Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
+            **Some intersting insight!** During the 2012 Presidential elections, the donations received were mostly 
+            scattered between the Democrats and the Republicans. Although some of the companies like Perry Homes and 
+            Hugo Enterprises donated mostly to the Republicans, majority of the donations were made to the Democrats.
             
-            Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-            Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-            Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-            Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+            In 2016, the donations were spaced out almost equally between the Democrats and the Republicans. Companies 
+            like Bloomberg LP is one of those few companies who have not donated significantly in the past elections 
+            campaigns except for 2016 and 2020. 
+            
+            In 2020, most of the companies shifted their major chunks to the Democratic Party barring Citadel LLC, Ryan 
+            Speciality group and Stephens Group which stayed loyal to the Republicans. Companies like Renaissance
+             Technologies continued their support to the Democrats irrespective of the election year.
             """)
             
     # Educational Organization -
-    st.write("""
-             ## Educational Institution Donations 
-             
-             **Some background thinking. Reason for thinking in this direction!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-               Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-               Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-               Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.   
-             
-             """)
+    
     
     # Get financial graph
     get_educational_graph()
@@ -425,13 +422,9 @@ def industry_donations_analysis():
     # Getting inference -
     st.write("")
     st.write("""
-            **Some intersting insight!** Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-            Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. **Year Specific.**  
-            
-            Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. 
-            Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis. 
-            Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. 
-            Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+            Educational institutions also lent their support in the US Presidential Campaigns. In all the campaigns until
+            now, the educational institutions, due to the diversity in their student population have donated unanimously
+             to the Democratic party.
             """)
             
 
