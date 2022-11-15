@@ -222,7 +222,7 @@ def expenditure_analysis():
     st.write("")
     
      # Getting the initial image -
-    col1, col2, col3 = st.beta_columns((1,2.5,1))
+    col1, col2, col3 = st.columns((1,2.5,1))
     image = Image.open('Expenditure_Demographics_Analysis/Data_Clean_Preprocess/Initial_Overview.png')
     col2.image(image)
     
@@ -249,7 +249,7 @@ def expenditure_analysis():
     st.write(" ")
     
     
-    col1, col2 = st.beta_columns((1,1))
+    col1, col2 = st.columns((1,1))
     # Getting party from the user -
     party_selected = col1.selectbox("Select Party", ['Democrats', 'Republicans'])
     
@@ -279,7 +279,7 @@ def expenditure_analysis():
     st.write(" ")
     
     # Choosing party to analyze vote difference.
-    col1, col2, col3 = st.beta_columns((1,1.5,1))
+    col1, col2, col3 = st.columns((1,1.5,1))
     party_selected_2 = col2.selectbox("Choose a party to analyze vote difference over years - ", 
                                      ['Democrats', 'Republicans'])
     st.write(" ")
@@ -326,7 +326,7 @@ def expenditure_analysis():
              </p>""", unsafe_allow_html=True)
     
     # Choosing party to analyze vote difference.
-    col1, col2, col3 = st.beta_columns((1,1.5,1))
+    col1, col2, col3 = st.columns((1,1.5,1))
     party_selected_3 = col2.selectbox("Choose a party to analyze overall graphs - ", 
                                      ['Democrats', 'Republicans'])
     st.write(" ")
@@ -395,7 +395,7 @@ def industry_donations_analysis():
             
     st.write(" ")
     
-    col1, col2, col3 = st.beta_columns((1,1.5,1))
+    col1, col2, col3 = st.columns((1,1.5,1))
     party_selected_don = col2.selectbox("Select Party - ", ["Democrats", "Republicans"])
     
     # Getting the state wise graph - 
@@ -533,7 +533,7 @@ def network_analysis():
     st.title("Network Analysis")
     
     # Dividing into 2 parts - 
-    col1, col2, col3 = st.beta_columns((1,0.1,1))
+    col1, col2, col3 = st.columns((1,0.1,1))
     
     # Setting the image - 
     image = Image.open('Images/network_photo.png')
@@ -581,7 +581,7 @@ def network_analysis():
     
     # To access the network analysis, press the button below - 
     st.write("")
-    col1, col2, col3 = st.beta_columns((1,1,1))
+    col1, col2, col3 = st.columns((1,1,1))
     link = '[Go to Network Analysis](https://lucky301910.github.io./)'
     col2.markdown(link, unsafe_allow_html=True)
     # url = 'https://ritesh-suhag.github.io./'
@@ -603,7 +603,7 @@ def authors():
     st.write(" ")
     
     # Dividing screen into 2 parts - 
-    col1, col2, col3 = st.beta_columns((0.75,0.1,2))
+    col1, col2, col3 = st.columns((0.75,0.1,2))
     
     # Setting the image - 
     image = Image.open('Images/ritesh.png')
@@ -628,7 +628,7 @@ def authors():
     st.write(" ")
     
     # Dividing screen into 2 parts - 
-    col1, col2, col3 = st.beta_columns((0.75,0.1,2))
+    col1, col2, col3 = st.columns((0.75,0.1,2))
     
     # Setting the image - 
     image = Image.open('Images/tushar.png')
@@ -653,7 +653,7 @@ def authors():
     st.write("")
     
     # Dividing screen into 2 parts - 
-    col1, col2, col3 = st.beta_columns((0.75,0.1,2))
+    col1, col2, col3 = st.columns((0.75,0.1,2))
     
     # Setting the image - 
     image = Image.open('Images/sambandh.png')
@@ -679,7 +679,7 @@ def authors():
     st.write("")
     
     # Dividing screen into 2 parts - 
-    col1, col2, col3 = st.beta_columns((0.75,0.1,2))
+    col1, col2, col3 = st.columns((0.75,0.1,2))
     
     # Setting the image - 
     image = Image.open('Images/swarnabha.png')
